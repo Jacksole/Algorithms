@@ -27,4 +27,5 @@ def find_sub_matrix_size(matrix):
                 copy_matrix[i][j] = 0
     return max([item for rows in copy_matrix for item in rows])
 
-print find_sub_matrix_size(matrix)
+
+print(find_sub_matrix_size(matrix))

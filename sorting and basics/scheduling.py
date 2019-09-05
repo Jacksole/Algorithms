@@ -29,6 +29,6 @@ def get_times(data):
     for job in sorted(times, reverse=True):
         length += job[2]
         total_completion_time += job[1]*length
-    print total_completion_time
+    print(total_completion_time)
 
 get_times(test_data) # ans -> 164566

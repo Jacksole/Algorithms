@@ -6,10 +6,10 @@ def search(arr, item):
     with the given item and returns True or
     False.
 
->>> search([5, 4, 1, 6, 2, 3, 9, 7], 2)
+# >>> search([5, 4, 1, 6, 2, 3, 9, 7], 2)
     True
 
->>> search([5, 4, 1, 6, 2, 3, 9, 7], 8)
+# >>> search([5, 4, 1, 6, 2, 3, 9, 7], 8)
     False
     """
 
@@ -32,5 +32,6 @@ def search(arr, item):
     return found
 
 
-print search([5, 4, 1, 6, 2, 3, 9, 7], 2)
-print search([5, 4, 1, 6, 2, 3, 9, 7], 8)
+if __name__ == "__main__":
+    print(search([5, 4, 1, 6, 2, 3, 9, 7], 2))
+    print(search([5, 4, 1, 6, 2, 3, 9, 7], 8))

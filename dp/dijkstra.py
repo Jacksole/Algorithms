@@ -1,5 +1,7 @@
 from heapq import heappush, heappop
-# graph = { 
+
+
+# graph = {
 #     's' : {'t':6, 'y':7},
 #     't' : {'x':5, 'z':4, 'y':8 },
 #     'y' : {'z':9, 'x':3},
@@ -17,16 +19,19 @@ def read_graph(file):
             graph[int(u)][int(v)] = int(w)
     return graph
 
+
 inf = float('inf')
+
+
 def dijkstra(graph, s):
     n = len(graph.keys())
     dist = dict()
     Q = list()
-    
+
     for v in graph:
         dist[v] = inf
     dist[s] = 0
-    
+
     heappush(Q, (dist[s], s))
 
     while Q:
@@ -39,5 +44,6 @@ def dijkstra(graph, s):
                 heappush(Q, (dist[v], v))
     return dist
 
+
 graph = read_graph("graph.txt")
-print dijkstra(graph, 1)
+print(dijkstra(graph, 1))

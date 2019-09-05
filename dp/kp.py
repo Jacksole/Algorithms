@@ -24,7 +24,9 @@ def knapsack(weights, values, W):
                 optimal_vals[w] = optimal_vals[w-weights[j]] + values[j]
     return optimal_vals[-1]
 
-with open("kpdata2.txt") as f:
+
+with open("kpdata.txt") as f:
     (weights, values) = read_data(f)
-# print knapsack_rep(weights, values, 10000)
-#print knapsack(weights, values, 2000000)
+
+print(knapsack_rep(weights, values, 10000))
+print(knapsack(weights, values, 2000000))
