@@ -106,6 +106,7 @@ def start_with_prefix(prefix, trie):
 
     return prefix_list
 
+
 if __name__ == "__main__":
     trie = [[]]
     states = """
@@ -162,4 +163,4 @@ if __name__ == "__main__":
     states_list = [w.strip().lower() for w in states.splitlines() if w]
     for state in states_list:
         insert_key(state, True, trie)
-    print start_with_prefix("new", trie)
+    print(start_with_prefix("west", trie))

@@ -45,5 +45,6 @@ def dijkstra(graph, s):
     return dist
 
 
+with open("graph.txt") as f:
 graph = read_graph("graph.txt")
 print(dijkstra(graph, 1))

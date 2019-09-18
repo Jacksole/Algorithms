@@ -42,4 +42,5 @@ def get_distances(graph, s):
     return "Graph contains a negative cycle"
 
 
-print(get_distances(graph, 's'))
+if __name__ == "__main__":
+    print(get_distances(graph, 's'))
