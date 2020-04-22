@@ -1,7 +1,7 @@
 Algorithms in Python
 ======
 
-Implementations of a few algorithms and datastructures for fun and profit!
+Implementations of a few algorithms and data structures for fun and profit!
 
 Completed
 ---
