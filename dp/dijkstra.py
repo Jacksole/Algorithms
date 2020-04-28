@@ -47,4 +47,4 @@ def dijkstra(graph, s):
 
 with open("graph.txt") as f:
     graph = read_graph("graph.txt")
-    print(dijkstra(graph, 1))
+

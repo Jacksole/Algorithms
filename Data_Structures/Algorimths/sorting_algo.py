@@ -294,7 +294,6 @@ def timsort(array):
                 return array
 
 
-ARRAY_LENGTH = 10000
 
 if __name__ == "__main__":
 
